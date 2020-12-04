@@ -14,7 +14,7 @@ class Puzzle:
         self.grid = [[''] * self.width for _ in range(self.height)]
 
         for row in range(self.height):
-            filled_cells_idx = random.sample(range(0, self.width-1), random.randint(0, self.width-1))
+            filled_cells_idx = random.sample(range(0, self.width), random.randint(1, self.width))
             for idx in filled_cells_idx:
                 self.grid[row][idx] = 'B'
 
